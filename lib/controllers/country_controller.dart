@@ -11,7 +11,7 @@ class CountryController extends GetxController {
   @override
   void onInit() {
     displayInfo();
-    displayAllCases();
+    // displayAllCases();
     super.onInit();
   }
 
@@ -22,10 +22,10 @@ class CountryController extends GetxController {
     }
   }
 
-  void displayAllCases() async {
-    var totalCase = await Services.fetchAllCases();
-    if (totalCase != null) {
-      allCasesList.assignAll(totalCase);
-    }
-  }
+  // void displayAllCases() async {
+  //   var totalCase = await Services.fetchAllCases();
+  //   if (totalCase != null) {
+  //     allCasesList.assignAll(totalCase);
+  //   }
+  // }
 }

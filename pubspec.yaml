@@ -30,6 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.0
   get: ^3.24.0
   http: ^0.12.2
+  hexcolor: ^1.0.6
+  persistent_bottom_nav_bar: ^3.1.0
+  intl: ^0.16.1
 
 
 dev_dependencies:

@@ -1,7 +1,12 @@
+import 'dart:ui';
+
 import 'package:covid_tracker/controllers/country_controller.dart';
 import 'package:covid_tracker/views/home.dart';
+import 'package:covid_tracker/views/hot_page.dart';
+import 'package:covid_tracker/views/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,28 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        // appBar: AppBar(
-        //   actions: [
-        //     IconButton(
-        //         icon: Icon(Icons.ac_unit_outlined),
-        //         onPressed: () {
-        //           // print(contryController.allCasesList.length);
-        //         })
-        //   ],
-        // ),
-        backgroundColor: Colors.white10,
-        body: SafeArea(
-          child: Obx(
-            () => ListView.builder(
-              itemCount: contryController.countryList.length,
-              itemBuilder: (context, index) {
-                return Home(countryInfo: contryController.countryList[index]);
-              },
-            ),
-          ),
-        ),
-      ),
+      home: MainScreen(),
     );
   }
 }
