@@ -31,7 +31,7 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         title: Text(
           "Covid Tracker",
-          style: TextStyle(fontFamily: "Arial", fontSize: 25.0),
+          style: TextStyle(fontFamily: "Arial", fontSize: 26.0),
         ),
         backgroundColor: HexColor("#060505"),
         actions: [
