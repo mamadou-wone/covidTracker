@@ -15,7 +15,7 @@ class Discover extends StatelessWidget {
             icon: Icon(Icons.navigate_next),
             color: Colors.white,
             onPressed: () {
-              // print(countryController.countryList[index].country);
+              print(countryController.countryList[index].country);
             },
           ),
           leading: CircleAvatar(
